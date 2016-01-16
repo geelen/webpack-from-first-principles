@@ -1,6 +1,6 @@
 // Adapted from SnapSVG's demo page: http://snapsvg.io/assets/demos/snap-mascot/crocodile-1.html
 
-Snap.load('assets/crocodile.svg', function (croc) {
+Snap.load('src/assets/crocodile.svg', function (croc) {
   document.querySelector('#crocodile').appendChild(croc.node);
 
   var head = croc.select("#upper-head"),
