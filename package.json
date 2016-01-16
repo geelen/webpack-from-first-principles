@@ -1,0 +1,23 @@
+{
+  "name": "wffp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geelen/webpack-from-first-principles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geelen/webpack-from-first-principles/issues"
+  },
+  "homepage": "https://github.com/geelen/webpack-from-first-principles#readme",
+  "devDependencies": {
+    "webpack": "^1.12.11"
+  }
+}
