@@ -8,9 +8,6 @@
 .min100vh {
   min-height: 100vh;
 }
-.max100vw {
-  max-width: 100vw;
-}
 
 .size-3x3 {
   height: 3rem;
