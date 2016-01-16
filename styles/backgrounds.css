@@ -1,0 +1,5 @@
+.classy-bokeh {
+  background: url(../assets/background.jpg) no-repeat 50% 50%;
+  background-color: hsl(188, 100%, 10%);
+  background-size: cover;
+}

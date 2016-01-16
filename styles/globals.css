@@ -1,0 +1,11 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+html,body {
+  min-height: 100vh;
+}
+
+:root {
+  font-family: Avenir Next, Arial, sans-serif;
+}
