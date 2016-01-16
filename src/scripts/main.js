@@ -1,9 +1,12 @@
 // Adapted from SnapSVG's demo page: http://snapsvg.io/assets/demos/snap-mascot/crocodile-1.html
 
 Snap.load('assets/crocodile.svg', function (croc) {
+  document.querySelector('#crocodile').appendChild(croc.node);
+
   var head = croc.select("#upper-head"),
     jaw = croc.select("#upper-jaw"),
     symbol = croc.select("#symbol"),
+    isOpen = true,
     timer;
 
   var pivots = [
@@ -12,6 +15,7 @@ Snap.load('assets/crocodile.svg', function (croc) {
   ];
 
   function close() {
+    isOpen = false;
     clearTimeout(timer);
 
     head.animate({
@@ -30,6 +34,7 @@ Snap.load('assets/crocodile.svg', function (croc) {
   }
 
   function open() {
+    isOpen = true;
     clearTimeout(timer);
 
     head.animate({
@@ -47,10 +52,7 @@ Snap.load('assets/crocodile.svg', function (croc) {
 
   timer = setTimeout(close, 50);
 
-  croc.hover(open,
-    function () {
-      timer = setTimeout(close, 200);
-    }
-  );
-
+  croc.select('*').click(function() {
+    isOpen ? close() : open()
+  });
 })
