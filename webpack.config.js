@@ -1,7 +1,9 @@
 module.exports = {
+  context: __dirname,
   entry: './src/scripts/main.js',
   output: {
     path: __dirname + '/build',
+    publicPath: 'build/',
     filename: 'bundle.js'
   },
 
@@ -12,8 +14,8 @@ module.exports = {
         loader: 'imports-loader?fix=>module.exports=0'
       },
       {
-        test: /\.svg$/,
-        loader: 'url'
+        test: /\.(svg|jpg)$/,
+        loader: 'url?limit=10000'
       },
       {
         test: /\.css$/,
