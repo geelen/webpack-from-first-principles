@@ -1,8 +1,8 @@
 // Adapted from SnapSVG's demo page: http://snapsvg.io/assets/demos/snap-mascot/crocodile-1.html
 var Snap = require('snapsvg');
 var crocodileUrl = require('../assets/crocodile.svg');
-var typographyCSS = require('../styles/typography.css');
-console.log(typographyCSS)
+
+require('../styles/index.css');
 
 Snap.load(crocodileUrl, function (croc) {
   document.querySelector('#crocodile').appendChild(croc.node);
