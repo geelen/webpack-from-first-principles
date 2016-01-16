@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/geelen/webpack-from-first-principles#readme",
   "devDependencies": {
+    "eve": "^0.5.0",
+    "file-loader": "^0.8.5",
+    "imports-loader": "^0.6.5",
+    "snapsvg": "^0.4.0",
+    "url-loader": "^0.5.7",
     "webpack": "^1.12.11"
   }
 }
