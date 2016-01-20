@@ -20,11 +20,10 @@
   "homepage": "https://github.com/geelen/webpack-from-first-principles#readme",
   "devDependencies": {
     "css-loader": "^0.23.1",
-    "eve": "^0.5.0",
     "file-loader": "^0.8.5",
     "image-webpack-loader": "^1.6.2",
     "imports-loader": "^0.6.5",
-    "snapsvg": "^0.4.0",
+    "snapsvg-cjs": "0.0.3",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.11"

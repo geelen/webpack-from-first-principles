@@ -1,5 +1,5 @@
 // Adapted from SnapSVG's demo page: http://snapsvg.io/assets/demos/snap-mascot/crocodile-1.html
-var Snap = require('snapsvg');
+var Snap = require('snapsvg-cjs');
 var crocodileUrl = require('../assets/crocodile.svg');
 
 require('../styles/index.css');

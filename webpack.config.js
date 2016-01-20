@@ -10,10 +10,6 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: require.resolve('snapsvg'),
-        loader: 'imports-loader?fix=>module.exports=0'
-      },
-      {
         test: /\.(svg|jpg)$/,
         loaders: [
           'url?limit=10000',
