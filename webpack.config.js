@@ -12,8 +12,7 @@ module.exports = {
       {
         test: /\.(svg|jpg)$/,
         loaders: [
-          'url?limit=10000',
-          'image-webpack?progressive=true'
+          'url?limit=10000'
         ]
       },
       {
